@@ -64,7 +64,7 @@ cdef extern from "winsock2.h":
     int SOCK_STREAM
 
 
-cdef extern from "netinet/in.h":
+cdef extern from "winsock2.h":
     struct in_addr:
         uint32_t s_addr
 
