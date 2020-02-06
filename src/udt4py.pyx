@@ -54,7 +54,7 @@ cdef extern from "Python.h":
     Py_buffer *PyMemoryView_GET_BUFFER(object mview) except NULL
 
 
-cdef extern from "sys/socket.h":
+cdef extern from "winsock2.h":
     struct sockaddr:
         pass
 
