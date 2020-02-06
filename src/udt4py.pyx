@@ -80,7 +80,7 @@ cdef extern from "winsock2.h":
     int AF_INET
 
 
-cdef extern from "arpa/inet.h":
+cdef extern from "winsock2.h":
     int inet_aton(const char *, in_addr *)
     char *inet_ntoa(in_addr)
 
